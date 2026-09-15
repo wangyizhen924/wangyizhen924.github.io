@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "【姓名】的个人主页"
+title                    : "王艺臻 Yizhen Wang"
 title_separator          : "-"
-name                     : &name "【姓名】"
-description              : &description "【姓名】的个人学术主页"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "王艺臻"
+description              : &description "王艺臻（Yizhen Wang）的个人学术主页"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://wangyizhen924.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,13 +24,13 @@ repository               : "WangYizhen924/wangyizhen924.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "【姓名】"
+  name             : "王艺臻"
   pronouns         : # example: "she/her"  
-  bio              : "【一句话简介：例如「【学校名称】【学院】本科生，关注社交媒体与舆论，喜欢用数据讲故事。」】"
-  location         : "【城市，例如：南京】"
-  employer         : "【学校名称】"
+  bio              : "南京大学新闻传播学院硕士研究生，关注健康传播与人机传播。"
+  location         : "南京"
+  employer         : "南京大学"
   uri              : # URL
-  email            : "【你的邮箱】" 
+  email            : "522026110043@smail.nju.edu.cn" 
 
   # Academic websites
   academia         : # URL
