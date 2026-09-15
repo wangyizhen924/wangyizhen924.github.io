@@ -70,20 +70,29 @@ redirect_from:
 * **内容生产**：电视新闻与科普短视频剪辑、新媒体内容策划与账号运营
 * **语言**：普通话（母语）、英语（CET-6，512 分）
 
+{% assign pub_count = site.publications | size %}
+{% if pub_count > 0 %}
 论文发表
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+{% endif %}
+
+{% assign talk_count = site.talks | size %}
+{% if talk_count > 0 %}
 学术报告
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
+{% endif %}
+
+{% assign teach_count = site.teaching | size %}
+{% if teach_count > 0 %}
 教学
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+{% endif %}

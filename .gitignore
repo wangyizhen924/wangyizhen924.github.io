@@ -19,5 +19,8 @@ package-lock.json
 # Ignore folders related to IDEs
 .vscode/
 
+# Ignore the assistant's local working notes (do NOT publish to the public repo)
+.workbuddy/
+
 # Ignore files created by MacOS
 .DS_Store
