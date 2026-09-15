@@ -1,12 +1,17 @@
 ---
 layout: archive
-title: "Teaching"
+title: "教学"
 permalink: /teaching/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign teaching_count = site.teaching | size %}
+{% if teaching_count == 0 %}
+  <p>这里暂时还没有内容。将来如果我担任助教或开展课程分享，会把相关内容补充在这里。</p>
+{% else %}
+  {% for post in site.teaching reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

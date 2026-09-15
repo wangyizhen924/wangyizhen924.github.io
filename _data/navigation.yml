@@ -1,33 +1,23 @@
-# The following is the order of the links in the header of the website.
+# 这里是网站顶部导航栏的菜单顺序和名称。
 #
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
+# 调整顺序 = 调整这里各条目的先后；
+# 删掉某一项 = 顶部导航里就不再显示它（但对应的文件仍然保留，随时可以加回来）。
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# 注意：CV 有两种版本，Markdown 版（/cv/）和 JSON 自动生成版（/cv-json/），
+#      一般只启用其中一个即可，这里启用的是 Markdown 版。
 
 main:
-  - title: "Publications"
+  - title: "论文发表"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "学术报告"
+    url: /talks/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
+  - title: "教学"
+    url: /teaching/
+
+  - title: "简历"
     url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+
+  - title: "博客"
+    url: /year-archive/

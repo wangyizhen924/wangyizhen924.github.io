@@ -1,16 +1,21 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "学术报告"
 permalink: /talks/
 author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<p style="text-decoration:underline;"><a href="/talkmap.html">查看我做学术报告去过的所有地方！</a></p>
 
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+{% assign talk_count = site.talks | size %}
+{% if talk_count == 0 %}
+  <p>这里暂时还没有内容。等我参加组会汇报或学术会议之后，会把报告信息补充在这里。</p>
+{% else %}
+  {% for post in site.talks reversed %}
+    {% include archive-single-talk.html %}
+  {% endfor %}
+{% endif %}

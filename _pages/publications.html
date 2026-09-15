@@ -1,15 +1,20 @@
 ---
 layout: archive
-title: "Publications"
+title: "论文发表"
 permalink: /publications/
 author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">你也可以在 <a href="{{site.author.googlescholar}}">我的 Google Scholar 主页</a> 找到我的文章。</div>
 {% endif %}
 
 {% include base_path %}
+
+{% assign pub_count = site.publications | size %}
+{% if pub_count == 0 %}
+  <p>这里暂时还没有内容。我正在整理自己的论文与课程研究项目，敬请期待。</p>
+{% else %}
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
@@ -32,5 +37,4 @@ author_profile: true
   {% endfor %}
 {% endif %}
 
-
-
+{% endif %}
